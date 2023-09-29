@@ -1,0 +1,52 @@
+%!LW recipe=latexmk (lualatex)
+
+\documentclass[12pt]{scrlttr2}
+%\usepackage{scrletter}
+
+% pdfLaTex
+%\usepackage[utf8]{inputenc}
+%\usepackage[german]{babel}
+%\usepackage[T1]{fontenc}
+
+% LuaTex / XeTeX
+\usepackage{polyglossia}
+\setdefaultlanguage{german}
+\setotherlanguages{english}
+
+% Biblio
+\usepackage{biblatex}
+%\addbibresource{sample.bib}
+
+% Tabs
+% \usepackage{booktabs}
+
+% Ext graphics
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+% Quotes
+\usepackage[]{csquotes}
+% Fonts
+\usepackage{palatino}
+% Exampletext
+\usepackage{blindtext}
+
+ 
+\setkomavar{fromname}{Max Mustermann}
+\setkomavar{fromemail}{Max@Mustermann.de}
+ 
+\setkomavar{fromaddress}{Musterweg 221, 12345 Musterstadt}
+ 
+\setkomavar{firstfoot}{\usekomavar{fromemail}}
+ 
+ 
+\begin{document}
+\begin{letter}{Maria Mustermann \\ Mustergasse 1 \\ 12346 Musterstadt}
+ 
+\opening{Hallo Maria,}
+ 
+\blindtext[1]
+ 
+\closing{Mit freundlichen Grüßen}
+ 
+\end{letter}
+\end{document}

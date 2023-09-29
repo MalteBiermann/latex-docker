@@ -1,0 +1,36 @@
+\documentclass[12pt,ngerman]{scrlttr2}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+
+%\usepackage[german]{babel}
+
+
+\setkomavar{yourref}{urref}
+\setkomavar{yourmail}{urmail}
+\setkomavar{myref}{meref}
+\setkomavar{customer}{kundenr}
+\setkomavar{invoice}{in?}
+\setkomavar{date}{\today}
+\setkomavar{subject}{subject}
+\begin{document}
+
+
+\begin{letter}{Mrs Mabel Canary\\24 The Street\\Some Village\\
+Some Town\\Noshire\\AB1 2YZ}
+  \opening{Dear Mrs~Canary}
+
+  This is an imaginary letter.
+
+  This is the second paragraph of the letter.
+
+  \closing{Yours sincerely}
+
+  \encl{Photocopy of something interesting\\
+   Photocopy of something rather dull}
+
+  \cc{Prof Important Person\\
+   Dr Bor Ing}
+\end{letter}
+
+\end{document}

@@ -9,5 +9,6 @@
         // "source=${localWorkspaceFolder}/tex,target=/tex,type=bind,consistency=cached"
     // ]
     "workspaceMount": "source=${localWorkspaceFolder}/tex,target=/tex,type=bind,consistency=cached",
-    "workspaceFolder": "/tex"
+    "workspaceFolder": "/tex",
+    "runArgs": ["--name", "latex_devcontainer"]
 } 
